@@ -5,7 +5,7 @@
 # Installing pyverilator to interact in python with verilog object
 
 ```
-git clone https://github.com/csail-csg/pyverilator
+git clone https://github.com/bat52/pyverilator.git
 cd pyverilator
 pip install .
 ``` 
