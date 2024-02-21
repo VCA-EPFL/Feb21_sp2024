@@ -1,5 +1,7 @@
 import pyverilator
-sim = pyverilator.PyVerilator.build('build/mkGCD2.v')
+import os
+
+sim = pyverilator.PyVerilator.build('build/mkGCD2.v', verilog_path=[os.path.expandvars('$BLUESPECDIR/Verilog')])
 
 
 # start gtkwave to view the waveforms as they are made
