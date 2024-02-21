@@ -1,0 +1,11 @@
+# Bluespec compiler goes from bsv -> verilog 
+
+
+
+# Installing pyverilator to interact in python with verilog object
+
+```
+git clone https://github.com/csail-csg/pyverilator
+cd pyverilator
+pip install .
+``` 
