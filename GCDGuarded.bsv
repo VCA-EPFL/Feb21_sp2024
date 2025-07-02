@@ -25,3 +25,19 @@ module mkGCDGuarded (GCDGuarded);
     endmethod
     
 endmodule 
+
+
+module mkParent(Empty);
+  GCDGuarded gcd <- mkGCDGuarded;
+
+  rule feed_gcd;
+    gcd.start(10,24);
+  endrule
+
+  rule get_result_gcd;
+    let x <- gcd.getResult;
+    $display("The result is ", x);
+    $finish;
+  endrule
+
+endmodule
